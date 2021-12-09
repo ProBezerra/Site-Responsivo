@@ -1,0 +1,246 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+header {
+  background-color: white;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.logo {
+  color: #16507b;
+}
+
+.logo h2 {
+  font-weight: normal;
+  font-size: 22px;
+}
+
+.menu {
+  width: 80%;
+  text-align: right;
+}
+
+.menu a {
+  color: #124265;
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 20px;
+  
+}
+
+.menu a:hover {
+  color: #007bff;
+}
+
+.menu .btn-menu {
+  background-color: #007bff;
+  display: inline-block;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 6px;
+}
+
+.menu .btn-menu:hover {
+  background-color: #124265;
+  color: white;
+}
+
+/*
+        Section Main
+     */
+
+section.main {
+  background-image: url("img/Triangular.jpg");
+  padding: 70px 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main__cta {
+  width: 100%;
+  margin: 60px 0;
+  text-align: center;
+}
+
+.main__cta h2 {
+  color: #16507b;
+  font-size: 40px;
+}
+
+.main__cta p {
+  color: gray;
+  font-size: 19px;
+  margin: 10px 0;
+}
+
+.main__cta button {
+  background-color: #007bff;
+  display: inline-block;
+  padding: 8px 30px;
+  color: white;
+  border-radius: 6px;
+  font-size: 20px;
+  border: 0;
+  cursor: pointer;
+}
+
+.diferenciais {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.diferencial-single {
+  border-radius: 10px;
+  background-color: white;
+  width: 23%;
+  margin-right: 2%;
+  padding: 50px 20px;
+}
+
+.diferencial-single i {
+  color: blue;
+  font-size: 23px;
+}
+
+.diferencial-single h2 {
+  color: #124265;
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.diferencial-single p {
+  color: gray;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+section .about {
+  padding: 80x 0;
+}
+
+.about-call {
+  width: 100%;
+  text-align: center;
+}
+
+.about-call h2 {
+  color:#124265;
+  text-transform: uppercase;
+}
+
+.about-call p {
+  font-size: 14px;
+  color:gray;  
+  margin: 10px 0;
+}
+
+.about-content{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+
+
+.about-content p {
+  width: 48%;
+  margin-right: 2%;
+  color:#444444;
+}
+
+.about-content span{
+  display:inline-block;
+  width: 100%;
+  margin-top: 10px;
+  
+}
+
+.icone {  
+  color: blue;
+}
+
+
+section.conquistas {
+  margin-top: 100px;
+  background-color: #f8fbfe;
+  padding: 20px 0;
+  color: #124265;
+  font-size: 11px;
+}
+
+.conquistas-single {
+  width: 22%;
+  margin-right: 3%;
+  text-align: center;
+}
+
+.conquitas-single h2 {
+  color: #124265;
+}
+
+.menu-itens{
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid blue;
+  display: none;
+}
+
+.menu-itens a {
+  display: block;
+  text-decoration: none;
+  color:blue
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .diferencial-single{
+        width:100%;
+        margin-bottom: 20px;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .logo {
+      width: 20%;
+    }
+    .menu-mobile {
+      width: 80%;
+      text-align: right;
+      display: block;
+      cursor: pointer;      
+    }
+
+    .menu-mobile i {
+      cursor: pointer;
+      font-size: 23px;
+      margin-top: 8px;
+
+    }
+    .about-content p {width: 100%; margin-bottom: 20px;}
+}
